@@ -11,14 +11,10 @@
             "id": "a7ccc2545840e9da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/content/blog/first-post.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "first-post"
+              "title": "新标签页"
             }
           }
         ]
@@ -167,11 +163,51 @@
   },
   "active": "a7ccc2545840e9da",
   "lastOpenFiles": [
-    "src/pages/profile.astro",
-    "src/pages/blog/[...slug].astro",
-    "src/pages/blog/index.astro",
-    "src/pages/blog",
-    "src/pages/posts/post-1.md",
-    "dist/blog-placeholder-1.jpg"
+    "vercel.json",
+    "tsconfig.json",
+    "tailwind.config.cjs",
+    "svelte.config.js",
+    "src/content/posts/guide/cover.jpeg",
+    "src/content/posts/guide/index.md",
+    "src/pages/posts/[...slug].astro",
+    "src/plugins/expressive-code/language-badge.ts",
+    "src/plugins/expressive-code/custom-copy-button.ts",
+    "src/i18n/languages/zh_TW.ts",
+    "src/i18n/languages/zh_CN.ts",
+    "src/i18n/languages/th.ts",
+    "src/i18n/languages/ko.ts",
+    "src/content/spec/about.md",
+    "src/content/posts/video.md",
+    "src/content/posts/markdown.md",
+    "src/content/posts/markdown-extended.md",
+    "src/content/posts/expressive-code.md",
+    "src/content/posts/draft.md",
+    "src/assets/images/demo-banner.png",
+    "src/assets/images/demo-avatar.png",
+    "README.md",
+    "public/favicon/favicon-light-32.png",
+    "public/favicon/favicon-light-192.png",
+    "public/favicon/favicon-light-180.png",
+    "public/favicon/favicon-light-128.png",
+    "public/favicon/favicon-dark-32.png",
+    "public/favicon/favicon-dark-192.png",
+    "public/favicon/favicon-dark-180.png",
+    "docs/README.zh-CN.md",
+    "docs/README.th.md",
+    "docs/README.ko.md",
+    "docs/README.ja.md",
+    "docs/README.es.md",
+    "CONTRIBUTING.md",
+    "tmp-template/docs/README.zh-CN.md",
+    "tmp-template/docs/README.th.md",
+    "tmp-template/docs/README.es.md",
+    "tmp-template/docs/README.ko.md",
+    "tmp-template/docs/README.ja.md",
+    "tmp-template/README.md",
+    "src/content/blog/third-post.md",
+    "src/content/blog/second-post.md",
+    "src/content/blog/markdown-style-guide.md",
+    "src/content/blog/first-post.md",
+    "tmp-template/src/content/posts/guide/index.md"
   ]
 }
