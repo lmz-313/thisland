@@ -4,6 +4,7 @@ import type {
 	NavBarConfig,
 	ProfileConfig,
 	SiteConfig,
+	CommentConfig,
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
@@ -13,7 +14,7 @@ export const siteConfig: SiteConfig = {
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 270, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: false, // Hide the theme color picker for visitors
+		fixed: true, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: true,
@@ -22,7 +23,7 @@ export const siteConfig: SiteConfig = {
 		credit: {
 			enable: true, // Display the credit text of the banner image
 			text: "Rusple", // Credit text to be displayed
-			url: "https://m.weibo.cn/detail/5133938752488680", // (Optional) URL link to the original artwork or artist's page
+			url: "https://weibo.com/1048358020/PeeTVarq0", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -55,7 +56,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "薿薿",
-	bio: "诸法无我",
+	bio: "诸法无我,诸行无常",
 	links: [
 		{
 			name: "抖音",
@@ -92,4 +93,11 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
+};
+
+export const commentConfig: CommentConfig = {
+  waline: {
+    serverURL: 'https://walineland.netlify.app/.netlify/functions/comment',
+    login: 'enable'
+  }
 };

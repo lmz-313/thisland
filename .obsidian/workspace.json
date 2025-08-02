@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7872ef9f95500936",
+        "id": "e58dfd4942202891",
         "type": "tabs",
         "children": [
           {
-            "id": "a7ccc2545840e9da",
+            "id": "7c51a01d59be96a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/test.md",
+                "file": "src/content/posts/init.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "init"
             }
           }
         ]
@@ -165,8 +165,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a7ccc2545840e9da",
+  "active": "7c51a01d59be96a9",
   "lastOpenFiles": [
+    "src/content/posts/kill-all.md",
+    "src/content/posts/sex.md",
+    "src/content/posts/init.md",
+    "src/assets/images/demo-avatar.png",
+    "src/assets/images/demo-avatar.jpg",
+    "src/assets/images/demo-banner.png",
+    "src/assets/images/Rusple-水月.jpeg",
+    "README.md",
+    "CONTRIBUTING.md",
+    "Invalid date.md",
+    "2022-07-01.md",
+    "src/content/posts/draft.md",
     "dist/sitemap-index.xml",
     "dist/sitemap-0.xml",
     "dist/_astro/roboto-vietnamese-700-normal.BFWtvCOj.woff2",
@@ -177,19 +189,12 @@
     "dist/_astro/roboto-vietnamese-400-normal.BYP5tVVv.woff",
     "dist/_astro/roboto-symbols-500-normal.BXFTxrNR.woff2",
     "dist/_astro/roboto-symbols-700-normal.D_8z4JZ9.woff",
-    "dist/_astro/roboto-symbols-700-normal.DKkQdRpM.woff2",
     "dist/_astro/demo-banner.WD4SMgz_.png",
     "dist/_astro/demo-avatar.DJGWcqME.jpg",
     "dist/_astro/demo-avatar.CxcI0ivM.png",
     "dist/_astro/@Rusple_的个人主页_-_微博.D0FQKLEs.jpeg",
     "dist/favicon/favicon-light-32.png",
     "dist/favicon/favicon-light-192.png",
-    "dist/favicon/favicon-light-180.png",
-    "dist/favicon/favicon-light-128.png",
-    "dist/favicon/favicon-dark-32.png",
-    "dist/favicon/favicon-dark-192.png",
-    "src/content/posts/draft.md",
-    "src/content/posts/test.md",
     "src/content/posts/2025年，一个博客是怎么样建成的？.md",
     "src/content/posts/2025年，一个博客是怎么样建成的.md",
     "src/content/posts/guide/index.md",
@@ -198,20 +203,14 @@
     "src/content/posts/markdown.md",
     "src/content/posts/markdown-extended.md",
     "src/content/posts/expressive-code.md",
-    "README.md",
     "docs/README.zh-CN.md",
     "docs/README.th.md",
     "docs/README.ko.md",
     "docs/README.ja.md",
     "docs/README.es.md",
-    "CONTRIBUTING.md",
     "tmp-template/docs/README.zh-CN.md",
     "tmp-template/docs/README.th.md",
     "tmp-template/docs/README.es.md",
-    "tmp-template/docs/README.ko.md",
-    "tmp-template/docs/README.ja.md",
-    "tmp-template/README.md",
-    "src/content/blog/third-post.md",
-    "src/content/blog/second-post.md"
+    "tmp-template/docs/README.ko.md"
   ]
 }

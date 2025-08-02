@@ -85,8 +85,18 @@ export type BlogPostData = {
 	prevSlug?: string;
 	nextTitle?: string;
 	nextSlug?: string;
+	comments?: boolean;
 };
 
 export type ExpressiveCodeConfig = {
 	theme: string;
 };
+
+export type CommentConfig = {
+  waline?: WalineConfig
+}
+
+type WalineConfig = {
+  serverURL: string
+  login?: string
+}
