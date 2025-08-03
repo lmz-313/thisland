@@ -93,10 +93,10 @@ export type ExpressiveCodeConfig = {
 };
 
 export type CommentConfig = {
-  waline?: WalineConfig
-}
+	waline?: WalineConfig;
+};
 
 type WalineConfig = {
-  serverURL: string
-  login?: string
-}
+	serverURL: string;
+	login?: string;
+};

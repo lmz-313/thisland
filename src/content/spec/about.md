@@ -1,9 +1,11 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于我
 
-::github{repo="saicaca/fuwari"}
+现在可能还不是描述自己的时候。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+我还是缺少那种心情，在他人面前大胆的介绍自己的热情。
+
+但我想时间会治愈这个问题。
+
+![1754227949271](image/about/1754227949271.png)
+
+[norizc老师的画](https://x.com/NoriZCI/status/1513093884020400133/photo/1)

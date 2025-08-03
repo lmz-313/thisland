@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 270, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: true, // Hide the theme color picker for visitors
+		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: true,
@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "GitHub",
+			name: "Source",
 			url: "https://github.com/LongMenJuZhen/thisland", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
@@ -60,7 +60,7 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "抖音",
-			icon: "simple-icons:tiktok", // Visit https://icones.js.org/ for icon codes
+			icon: "line-md:tiktok", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://v.douyin.com/aGfwrU3eZ0M/ 7@9.com :1pm",
@@ -72,13 +72,13 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "YouTube",
-			icon: "simple-icons:youtube",
+			icon: "line-md:youtube",
 			url: "https://www.youtube.com/@caonimeidi",
 		},
 		{
-			name: "Bluesky",
-			icon: "simple-icons:bluesky",
-			url: "https://bsky.app/profile/caonimeidi.bsky.social",
+			name: "X, formerly Twitter",
+			icon: "line-md:twitter-x",
+			url: "https://x.com/caonimeidi313",
 		},
 	],
 };
@@ -96,8 +96,8 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-  waline: {
-    serverURL: 'https://walineland.netlify.app/.netlify/functions/comment',
-    login: 'enable'
-  }
+	waline: {
+		serverURL: "https://walineland.netlify.app/.netlify/functions/comment",
+		login: "enable",
+	},
 };

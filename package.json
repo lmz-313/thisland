@@ -66,6 +66,7 @@
     "@astrojs/ts-plugin": "^1.10.4",
     "@biomejs/biome": "1.9.4",
     "@iconify-json/iconoir": "^1.2.7",
+    "@iconify-json/line-md": "^1.2.8",
     "@iconify-json/simple-icons": "^1.2.40",
     "@rollup/plugin-yaml": "^4.1.2",
     "@types/hast": "^3.0.4",
@@ -74,7 +75,8 @@
     "@types/sanitize-html": "^2.16.0",
     "@waline/client": "^3.6.0",
     "postcss-import": "^16.1.1",
-    "postcss-nesting": "^13.0.2"
+    "postcss-nesting": "^13.0.2",
+    "prettier": "^3.6.2"
   },
   "packageManager": "pnpm@10.13.1"
 }

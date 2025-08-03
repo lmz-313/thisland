@@ -1,20 +1,20 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-import { commentConfig } from '@/config'
-import Waline from './Waline.astro'
+import type { CollectionEntry } from "astro:content";
+import { commentConfig } from "@/config";
+import Waline from "./Waline.astro";
 interface Props {
-  post: CollectionEntry<'posts'>
+	post: CollectionEntry<"posts">;
 }
 
-const { id, data, slug } = Astro.props.post
+const { id, data, slug } = Astro.props.post;
 
-const path = `/posts/${slug}`
-const url = `${Astro.site?.href}${path}`
-const comments = data.comments
+const path = `/posts/${slug}`;
+const url = `${Astro.site?.href}${path}`;
+const comments = data.comments;
 
-let commentService = ''
+let commentService = "";
 if (commentConfig?.waline) {
-  commentService = 'waline'
+	commentService = "waline";
 }
 ---
 { comments == true &&
