@@ -40,10 +40,11 @@ const config = {
   <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
   <!-- 定义 CSS 变量，传递 hue 值 -->
-  <style define:vars={{ configHue }}>
+  <style>
     #waline {
-      --waline-theme-color: oklch(75% 0.33 var(--configHue));
-      --waline-active-color: oklch(80% 0.33 var(--configHue));
+      --waline-theme-color: oklch(75% 0.14 var(--hue));
+      --waline-active-color: oklch(80% 0.14 var(--hue));
+	  color: oklch(70% 0.14 var(--hue));
     }
   </style>
   

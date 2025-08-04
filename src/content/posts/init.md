@@ -191,14 +191,17 @@ halo是一个完整的博客方案，别说深色，多语言，他甚至AI，se
 
 如果你选择用twikoo的话可以看看[zokiio](https://blog.tantalum.life/posts/add-comments-to-fuwari-with-twikoo/)的博客，写的比较详细，但我没有验证，祂还做了个挺好看的鼠标点击效果，感兴趣的可以去看看。
 
-然后参考了官方文档，进行了一些配置。
+然后参考了官方文档，对评论区进行了一些配置。
 
 * 文章反应，waline独占功能，不可能不用。
+* 官方的表情包都安排上了，后面有缘添加新的吧。
 * 没有配置人机验证，我打算等我被爬虫攻击了再说。
 * 邮件通知，按理来说应该配置好了，不过还需要有缘人来帮我测试一下。
-* 默认头像，参考这个[issue](https://github.com/orgs/walinejs/discussions/1781)。不过似乎这几年[gravatar](https://gravatar.com/)的ui变了太多了，设置完头像后我直接用右键找的头像链接。
+* 默认头像，参考这个[issue](https://github.com/orgs/walinejs/discussions/1781)。不过似乎这几年[gravatar](https://gravatar.com/)的ui变了太多了，设置完头像后我直接用右键找的头像链接。默认头像来自于[明日方舟终末地表情包](https://x.com/AKEndfieldZHT/status/1722524431254524012)。
 
 ![1754243266455](image/init/1754243266455.png)
+
+* 试着让waline的主题色跟随网站主题变化，注意到fuwari使用了oklach色彩空间。有一说一，要讲清楚为什么要用这个色彩空间完全可以单开一篇文章。
 
 最终修改后的 `src/components/comment/Waline.astro`如下：
 

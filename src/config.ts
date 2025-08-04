@@ -59,16 +59,16 @@ export const profileConfig: ProfileConfig = {
 	bio: "诸法无我,诸行无常",
 	links: [
 		{
+			name: "哔哩哔哩",
+			icon: "simple-icons:bilibili",
+			url: "https://space.bilibili.com/283293701",
+		},
+		{
 			name: "抖音",
 			icon: "line-md:tiktok", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://v.douyin.com/aGfwrU3eZ0M/ 7@9.com :1pm",
-		},
-		{
-			name: "哔哩哔哩",
-			icon: "simple-icons:bilibili",
-			url: "https://space.bilibili.com/283293701",
 		},
 		{
 			name: "YouTube",
