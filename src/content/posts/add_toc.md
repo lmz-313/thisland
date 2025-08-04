@@ -13,7 +13,7 @@ lang: ''
 
 fuwari自带了一个目录组件，你可以在`src/config.ts`中启用。
 
-```typescrpit
+```typescript
 	toc: {
 		enable: true, // Display the table of contents on the right side of the post
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
