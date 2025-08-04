@@ -11,7 +11,7 @@ lang: ''
 ---
 # 前言
 
-fuwari自带了一个目录组件，你可以在`src/config.ts`中启用。
+fuwari自带了一个目录组件，你可以在 `src/config.ts`中启用。
 
 ```typescript
 	toc: {
@@ -85,7 +85,7 @@ fuwari自带了一个目录组件，你可以在`src/config.ts`中启用。
 </Layout>
 ```
 
-然后把改成这样。
+然后把 `src/components/widget/SideBar.astro`改成这样。
 
 ```astro
 ---
