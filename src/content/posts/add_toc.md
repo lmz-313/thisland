@@ -1,9 +1,9 @@
 ---
-title: 为博客添加文章目录
+title: 为博客添加文章目录，保持swup平滑效果
 published: 2025-08-05
 description: ''
 image: ''
-tags: [astro,fuwari]
+tags: [astro,fuwari,swup]
 category: '技术'
 draft: false 
 comments: true
@@ -35,6 +35,10 @@ fuwari自带了一个目录组件，你可以在 `src/config.ts`中启用。
 考虑到左边的sidebar有一大片空间，放右边确实是个有点奇怪的选择。
 
 # 配置
+
+:::warning[有bug]
+这样做会使得平滑效果消失，详情请见下文
+:::
 
 去 `src/layouts/MainGridLayout.astro`把原来的目录删掉。
 
@@ -120,3 +124,39 @@ const className = Astro.props.class;
 完成。
 
 ![1754328808931](image/add_toc/1754328808931.png)
+
+### PS
+
+这样添加目录似乎会使得fuwari的平滑变化的效果失效，就是跳转页面的时候不刷新整个页面的效果。问了问gemini，修复了这个问题。
+
+问题的来源总的来说，是因为fuwari使用了 **Swup.js** 库来实现页面间的平滑过渡，而不是传统的整页刷新。swup根据容器的id刷新容器的内容。所以在添加组件时保持容器的id。
+
+对于 `src/layouts/MainGridLayout.astro`，要保留一个空组件。
+
+```html
+<!-- The things that should be under the banner, only the TOC for now -->
+<!-- 添加下面这个空的、隐藏的 div 来让 Swup 正常工作 -->
+<div id="toc" class="hidden"></div>
+</Layout>
+
+```
+
+对于 `src/components/widget/SideBar.astro`，要添加一个带id的容器。
+
+```html
+<div id="sidebar" class:list={[className, "w-full"]}>
+    <div class="flex flex-col w-full gap-4 mb-4">
+        <Profile></Profile>
+    </div>
+    <div id="sidebar-sticky" class="transition-all duration-700 flex flex-col w-full gap-4 top-4 sticky top-4">
+        <Categories class="onload-animation" style="animation-delay: 150ms"></Categories>
+        <Tag class="onload-animation" style="animation-delay: 200ms"></Tag>
+        <!-- 套一个id为toc的容器，让swup可以刷新局部 -->
+        <div id="toc">
+            <TOC headings={headings}></TOC>
+        </div>
+    </div>
+</div>
+```
+
+平滑效果就恢复了。
