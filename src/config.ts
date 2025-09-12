@@ -95,9 +95,14 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	theme: "github-dark",
 };
 
-export const commentConfig: CommentConfig = {
-	waline: {
-		serverURL: "https://walineland.netlify.app/.netlify/functions/comment",
-		login: "enable",
+export const commentConfig: CommentConfig = { //单选
+	// waline: {
+	// 	serverURL: "https://walineland.netlify.app/.netlify/functions/comment",
+	// 	login: "enable",
+	// },
+	artalk: {
+		server: 'https://thisland.dpdns.org:23367/', // 你的反代
+		site: '此地',                    // 后端里配置的站点名
 	},
 };
+

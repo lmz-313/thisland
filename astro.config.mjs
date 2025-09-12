@@ -28,9 +28,9 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://fuwari.vercel.app/",
+  site: "https://thisland.netlify.app/",
   base: "/",
-  trailingSlash: "always",
+  trailingSlash: "ignore",
 
   integrations: [
       tailwind({

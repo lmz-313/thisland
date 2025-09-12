@@ -94,9 +94,15 @@ export type ExpressiveCodeConfig = {
 
 export type CommentConfig = {
 	waline?: WalineConfig;
+	artalk?: ArtalkConfig;
 };
 
 type WalineConfig = {
 	serverURL: string;
 	login?: string;
+};
+
+type ArtalkConfig = {
+	server: string;
+	site: string;
 };
