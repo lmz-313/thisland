@@ -58,16 +58,22 @@ export const profileConfig: ProfileConfig = {
 	name: "薿薿",
 	bio: "诸法无我,诸行无常",
 	links: [
+        // Visit https://icones.js.org/ for icon codes
+        // You will need to install the corresponding icon set if it's not already included
+        // `pnpm add @iconify-json/<icon-set-name>`
 		{
 			name: "哔哩哔哩",
 			icon: "simple-icons:bilibili",
 			url: "https://space.bilibili.com/283293701",
 		},
+        {
+            name: "X(Twitter)",
+            icon: "line-md:twitter-x",
+            url: "https://x.com/caonimeidi313",
+        },
 		{
 			name: "抖音",
-			icon: "line-md:tiktok", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
+			icon: "line-md:tiktok",
 			url: "https://v.douyin.com/aGfwrU3eZ0M/ 7@9.com :1pm",
 		},
 		{
@@ -75,11 +81,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "line-md:youtube",
 			url: "https://www.youtube.com/@caonimeidi",
 		},
-		{
-			name: "X, formerly Twitter",
-			icon: "line-md:twitter-x",
-			url: "https://x.com/caonimeidi313",
-		},
+        {
+            name: "BlueSky",
+            icon: "line-md:bluesky",
+            url: "https://bsky.app/profile/caonimeidi.bsky.social",
+        },
 	],
 };
 
